@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">My Singing Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#music">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#video-covers">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- Hero Section using Bootstrap jumbotron -->
+<div class="jumbotron text-center text-white" style="background-image: url('./images/bg2.jpg'); background-size: cover; background-position: center; padding: 300px 0;">
+    <div class="container">
+        <h1 class="display-4 mt-5">Welcome to My Singing World</h1> <!-- Added mt-5 class -->
+        <p class="lead mt-3">Discover my latest songs and performances</p> <!-- Added mt-3 class -->
+        <a href="#music" class="btn btn-light btn-lg mt-4">Listen Now</a> <!-- Added mt-4 class -->
+    </div>
+</div>
+
+
+<!-- About Me Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+            <!-- Photo on the left -->
+            <div class="col-md-4 text-center mb-4">
+                <img src="./images/aboutme.webp" class="img-fluid" alt="My Photo">
+            </div>
+            <!-- Information on the right -->
+            <div class="col-md-8">
+                <h5>Rushikesh Gaikwad</h5>
+                <p>
+                    Hello! I'm Rushikesh, a passionate singer and performer. Music has always been my love, and through my voice, I express emotions, stories, and connect with people.
+                </p>
+                <p>
+                    I perform a variety of genres and love to explore new music styles. My journey with music began at a young age, and since then, I have performed at numerous events and shared my voice with the world.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Music Section using Bootstrap cards -->
+<section id="music" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Music</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./images/kaakan.jpg" class="card-img-top" alt="Album 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Album 1</h5>
+                        <audio controls class="w-100">
+                            <source src="./music/kakaan.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./images/majhi hya priyala preet.jpg" class="card-img-top" alt="Album 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Album 2</h5>
+                        <audio controls class="w-100">
+                            <source src="./music/majhi hya preyela.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./images/tu mala me tula.jpg" class="card-img-top" alt="Album 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Album 3</h5>
+                        <audio controls class="w-100">
+                            <source src="./music/tu mala me tula.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./images/tere binna.jpg" class="card-img-top" alt="Album 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Album 4</h5>
+                        <audio controls class="w-100">
+                            <source src="./music/heropanti.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Section using Bootstrap grid -->
+<section id="video-covers" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">My Covers</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <video class="card-img-top" controls style="height: 800px; object-fit: cover;">
+                        <source src="./Videos/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cover 1</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <video class="card-img-top" controls style="height: 800px; object-fit: cover;">
+                        <source src="./Videos/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cover 2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Instagram Videos Section -->
+<section id="instagram-videos" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Instagram Videos</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CpxxvD4gdgS/?igsh=dWx3eDU3dnJ4ZXFp" data-instgrm-version="14"></blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                    <div class="card-footer text-center">
+                        <h5 class="mt-2">Live Performance 1</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Cp7zZf7gMEh/?igsh=MXdvdnk3bWE5ZXRscg==" data-instgrm-version="14"></blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                    <div class="card-footer text-center">
+                        <h5 class="mt-2">Live Performance 2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row">
+            <!-- Left Column for Contact Information -->
+            <div class="col-md-6">
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">
+                        <i class="bi bi-envelope-fill"></i> Gmail: 
+                        <a href="mailto:gaikwadrushikesh608@gmail.com" class="contact-link">gaikwadrushikesh608@gmail.com</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-whatsapp"></i> WhatsApp: 
+                        <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="contact-link">+91 7057634921</a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-instagram"></i> Instagram: 
+                        <a href="https://www.instagram.com/rushikesh_7911/" target="_blank" class="contact-link">@rushikesh_7911</a>
+                    </li>
+                </ul>
+            </div>
+
+
+                <!-- Right Column for Contact Form -->
+                <div class="col-md-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control form-control-sm" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control form-control-sm" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control form-control-sm" id="message" rows="1" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 My Singing Website | Designed by Rushikesh Gaikwad</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

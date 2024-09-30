@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    /* padding-top: 70px; Adjust this value based on your navbar height */
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+    background-color: #f8f9fa; /* Optional: Different background for the footer */
+}
+
+
+.jumbotron {
+    background-image: url('./images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0; /* Maintain the padding for a nice layout */
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 50px; /* Adjust this value to move the content down */
+    transform: translateY(-50%);
+}
+
+
+.jumbotron h1 {
+    animation: fadeInDown 0.5s;
+}
+
+.jumbotron p {
+    animation: fadeInUp 0.5s;
+}
+
+
+#about p {
+    line-height: 1.8;
+}
+
+/* Optional styles for a compact contact form */
+#contact h2 {
+    margin-bottom: 2rem; /* Keeps heading spacing */
+}
+
+.contact-link {
+    color: #007bff; /* Change this to your desired link color */
+    text-decoration: none; /* Remove the underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.contact-link:hover {
+    color: #0056b3; /* Change to a darker color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
